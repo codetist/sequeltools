@@ -4,6 +4,9 @@
 sequelTools Sessionbrowser is a browser-based application for Oracle database 
 developers who want to get better insights into what is happening in their databases.
 
+### Download
+Downlod current version from the [Releases](https://github.com/codetist/sequeltools/releases/).
+
 ### Features
 * Easy to use browser-based user interface.
 * Built on JVM, available for all major operating systems.
