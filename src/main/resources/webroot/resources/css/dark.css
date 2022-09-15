@@ -1,0 +1,23 @@
+:root {
+    --highlight-color: #d9252b;
+    --dark-text-color: #747474;
+    --medium-text-color: #a0a0a0;
+    --light-text-color: #ffffff;
+    --text-toolbar-color: #ffffff;
+    --text-toolbar-about: #c0c0c0;
+
+    --dark-background-color: #000000;
+    --normal-background-color: #171717;
+    --light-background-color: #3a3a3a;
+
+    --shadow-color: #494949;
+
+    --session-active-color: #ff5a00;
+    --session-inactive-color: #4ca2ee;
+    --session-killed-color: #7086a1;
+    --session-block-color: #d9252b;
+    --session-other-color: #809e88;
+
+    --panel-background: rgba(60,60,60,.95);
+    --modal-transparent-layer: rgba(0, 0, 0, 0.7);
+}

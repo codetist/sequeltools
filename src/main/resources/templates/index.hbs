@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>sequelTools Session Browser</title>
+    <link href="{{baseUrl}}resources/css/dark.css" rel="stylesheet" id="displaymode"/>
+    <link href="{{baseUrl}}resources/css/screen.css" rel="stylesheet"/>
+    <link href="{{baseUrl}}vendors/fontawesome/css/fontawesome.min.css" rel="stylesheet"/>
+    <link href="{{baseUrl}}vendors/fontawesome/css/solid.min.css" rel="stylesheet"/>
+
+    <script src="{{baseUrl}}resources/js/startupErrorHandler.js"></script>
+    <script src="{{baseUrl}}resources/js/appInit.js"></script>
+
+    <link rel="icon" type="image/png" href="{{baseUrl}}resources/img/icons/96/sqt.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{baseUrl}}resources/img/icons/96/sqt.png" sizes="96x96">
+</head>
+<body class="text_dark">
+    <div v-cloak id="sequeltoolsapp">
+        <div class="header noselect">
+            <div class="banner"><span><i class="fas fa-database"></i></span> sequelTools Session Browser</div>
+            <session-filters></session-filters>
+            <status-bar></status-bar>
+        </div>
+
+        <sessions></sessions>
+        <toolbar></toolbar>
+        <modal-dialog></modal-dialog>
+
+        <div id="appLoading" class="app_loading">
+            <img src="{{baseUrl}}resources/img/progress.gif" />&nbsp;Loading application...
+        </div>
+    </div>
+    <script type="text/javascript">
+        const baseUrl="{{baseUrl}}"
+        initApplication(baseUrl);
+    </script>
+</body>
+</html>

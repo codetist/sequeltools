@@ -1,0 +1,24 @@
+{
+  "database": {
+    "connections": [
+      {
+        "dataSourceName": "database1",
+        "description": "Database 1",
+        "url": "jdbc:oracle:thin:@//hostname:port/service",
+        "user": "username",
+        "password": "password"
+      },
+      {
+        "dataSourceName": "database2",
+        "description": "Database 2",
+        "url": "jdbc:oracle:thin:@//hostname:port/service",
+        "user": "username",
+        "password": "password"
+      }
+    ]
+  },
+  "httpServer": {
+    "port": 8080,
+    "bindToHost": "127.0.0.1"
+  }
+}

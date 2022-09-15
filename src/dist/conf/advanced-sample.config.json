@@ -1,0 +1,39 @@
+{
+  "database": {
+    "connections": [
+      {
+        "dataSourceName": "database1",
+        "description": "Database 1",
+        "url": "jdbc:oracle:thin:@//hostname:port/service",
+        "user": "username",
+        "password": "password",
+        "driver": "oracle.jdbc.OracleDriver",
+        "initialPoolSize": 1,
+        "minPoolSize": 1,
+        "maxPoolSize": 2,
+        "acquireRetryAttempts": 1,
+        "checkConnectionOnStartup": true,
+        "checkoutTimeout": 10000
+      },
+      {
+        "dataSourceName": "database2",
+        "description": "Database 2",
+        "url": "jdbc:oracle:thin:@//hostname:port/service",
+        "user": "username",
+        "password": "password",
+        "driver": "oracle.jdbc.OracleDriver",
+        "initialPoolSize": 1,
+        "minPoolSize": 1,
+        "maxPoolSize": 2,
+        "acquireRetryAttempts": 1,
+        "checkConnectionOnStartup": true,
+        "checkoutTimeout": 10000
+      }
+    ]
+  },
+  "httpServer": {
+    "port": 8080,
+    "bindToHost": "127.0.0.1",
+    "baseUrl": "http://localhost:8080/"
+  }
+}
