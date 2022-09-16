@@ -2,7 +2,7 @@
 
 ## Overview
 sequelTools Sessionbrowser is a browser-based application for Oracle database 
-developers who want to get better insights into what is happening in their databases.
+developers who want to get better insights into what is happening inside their databases.
 
 ### Download
 Downlod current version from the [Releases](https://github.com/codetist/sequeltools/releases/).
@@ -31,14 +31,14 @@ Downlod current version from the [Releases](https://github.com/codetist/sequelto
 ## Requirements
 
 ### JRE/JDK
-* sequelTools is built on JDK8, so this is the minimum required JVM 
+* sequelTools Sessionbrowser is built on JDK8, so this is the minimum required JVM 
   version.
 
 ### Oracle Database
 * Oracle database version 11 and higher.
 * Database user that is allowed to access data dictionary and Oracle dynamic 
   performance (v$) views.
-* some features like session history require separately licensed Oracle Options 
+* Some features like session history require separately licensed Oracle Options 
   or Management Packs.
 
 ### Oracle JDBC driver
@@ -46,7 +46,7 @@ Download appropriate drivers from
 https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html.
 
 ### Browser
-sequelTools requires a browser supporting ECMAScript 6 (a.k.a ES6 or 
+sequelTools Sessionbrowser requires a browser supporting ECMAScript 6 (a.k.a ES6 or 
 Javascript 6). Minimum required browser versions are:
 * Chrome 58
 * Edge 14
@@ -54,10 +54,10 @@ Javascript 6). Minimum required browser versions are:
 * Safari 10 
 * Opera 55
 
-## Running sequelTools
+## Running sequelTools Sessionbrowser
 
 ### Configuration
-In order to run sequelTools configuration file needs to be stored in the 
+In order to run sequelTools Sessionbrowser configuration file needs to be stored in the 
 classpath using config.json as filename.
 ```
 {
@@ -112,7 +112,7 @@ java -cp '*' de.codemonaut.sequeltools.LauncherVerticle
 ### ZIP distribution
 * Download and extract the sequelTools distribution file.
 * Download JDBC drivers from the [JDBC Downloads](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html) page.
-* Place the JDBC drivers jar file in the lib-subfolder of the extracted sequelTools Session Browser archive.
+* Place the JDBC drivers jar file in the lib-subfolder of the extracted sequelTools Sessionbrowser archive.
 * Copy or rename the provided sample.config.json to config.json.
 * Edit the config.json to provide your database connection information.
 * Start application from the bin-directory by running sequeltools (Linux/Unix/MacOS) or sequeltools.bat (Windows).
@@ -124,12 +124,13 @@ java -cp '*' de.codemonaut.sequeltools.LauncherVerticle
 ### Why is displaying sessions so slow?
 Depending on your database activity and usage the number of sessions 
 to display might get very high. On slow machines rendering a high number 
-of sessions in sequelTools might take a noticeable amount of time.
+of sessions in sequelTools Sessionbrowser might take a noticeable amount of time.
 In this case reduce the number of sessions displayed per page. Default is 50.
 
 ### Is RAC supported?
 RAC is currently not supported. However, you can create separate connections 
-for each node. sequelTools will only show sessions of current node connected.
+for each node. sequelTools Sessionbrowser will only show sessions of current 
+node connected.
 
 ### Are there any advanced configuration options?
 
@@ -201,7 +202,7 @@ on all available interfaces use "0.0.0.0".
 Local port used for serving the web interface.
 
 ##### `baseUrl` (optional, default: "/")
-Set this option when running sequelTools Session Browser behind a Reverse 
+Set this option when running sequelTools Sessionbrowser behind a Reverse 
 Proxy. For example: The application should be available on 
 https://myserver/sequeltools then set baseUrl to "https://myserver/sequeltools/".
 Make sure to put the url here exactly the same way as it is accessed later. 
@@ -237,7 +238,7 @@ off, all, finest, finer, fine, config, info, warning and severe.
 
 ### Is user authentication and/or TLS support planned?
 
-No. For such use cases it is recommended to run sequelTools Session Browser 
+No. For such use cases it is recommended to run sequelTools Sessionbrowser
 behind a Reverse Proxy. See [How to setup the application behind a Reverse 
 Proxy?](#reverseproxy) for details.
 
